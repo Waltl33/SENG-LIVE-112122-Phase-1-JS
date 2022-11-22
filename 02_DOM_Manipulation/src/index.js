@@ -6,6 +6,10 @@ function formatPrice(price) {
   return '$' + Number.parseFloat(price).toFixed(2);
 }
 
+function renderHeader(bookStore) {
+  document.querySelector('h1').textContent = bookStore.name
+  
+}
 // create a function called renderBook(book)
 // it will take a book object as an argument
 // and create the html struture for rendering 
